@@ -45,13 +45,14 @@ python train_image_classifier.py \
   --checkpoint_exclude_scopes=InceptionV3/Logits,InceptionV3/AuxLogits \
   --trainable_scopes=InceptionV3/Logits,InceptionV3/AuxLogits \
   --max_number_of_steps=1000 \
-  --batch_size=32 \
+  --batch_size=128 \
   --learning_rate=0.01 \
   --save_interval_secs=30 \
   --save_summaries_secs=30 \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
+  --num_epochs_per_decay=0.05 \
   --opt_epsilon=0.00000001
 
 # Run evaluation.
@@ -72,13 +73,14 @@ python train_image_classifier.py \
   --checkpoint_path=${TRAIN_DIR} \
   --model_name=inception_v3 \
   --max_number_of_steps=10000 \
-  --batch_size=32 \
+  --batch_size=128 \
   --learning_rate=0.001 \
   --save_interval_secs=30 \
   --save_summaries_secs=30 \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
+  --num_epochs_per_decay=0.05 \
   --opt_epsilon=0.00000001
 
 # Run evaluation.
