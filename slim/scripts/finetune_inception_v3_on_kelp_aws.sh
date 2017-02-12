@@ -52,7 +52,8 @@ python train_image_classifier.py \
   --save_summaries_secs=60 \
   --log_every_n_steps=100 \
   --optimizer=rmsprop \
-  --weight_decay=0.00004
+  #--weight_decay=0.00004
+  --weight_decay=0.999
 
 # Run evaluation.
 python eval_image_classifier.py \
@@ -71,15 +72,16 @@ python train_image_classifier.py \
   --dataset_dir=${DATASET_DIR} \
   --checkpoint_path=${TRAIN_DIR} \
   --model_name=inception_v3 \
-  --max_number_of_steps=30000 \
+  --max_number_of_steps=10000 \
   --batch_size=32 \
-  --learning_rate=0.0001 \
+  --learning_rate=0.001 \
 #  --learning_rate_decay_type=fixed \
   --save_interval_secs=60 \
   --save_summaries_secs=60 \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
-  --weight_decay=0.00004
+  #--weight_decay=0.00004
+  --weight_decay=0.999
 
 # Run evaluation.
 python eval_image_classifier.py \
