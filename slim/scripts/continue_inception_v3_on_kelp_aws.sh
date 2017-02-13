@@ -43,7 +43,7 @@ python train_image_classifier.py \
   --dataset_dir=${DATASET_DIR} \
   --checkpoint_path=${TRAIN_DIR} \
   --model_name=inception_v3 \
-  --max_number_of_steps=20000 \
+  --max_number_of_steps=50000 \
   --batch_size=32 \
   --learning_rate=0.0001 \
   --save_interval_secs=60 \
