@@ -46,7 +46,7 @@ python train_image_classifier.py \
   --trainable_scopes=InceptionV3/Logits,InceptionV3/AuxLogits \
   --max_number_of_steps=1000 \
   --batch_size=32 \
-  --learning_rate=0.002 \
+  --learning_rate=0.001 \
   --save_interval_secs=60 \
   --save_summaries_secs=60 \
   --log_every_n_steps=10 \
@@ -72,9 +72,9 @@ python train_image_classifier.py \
   --dataset_dir=${DATASET_DIR} \
   --checkpoint_path=${TRAIN_DIR} \
   --model_name=inception_v3 \
-  --max_number_of_steps=10000 \
+  --max_number_of_steps=30000 \
   --batch_size=32 \
-  --learning_rate=0.001 \
+  --learning_rate=0.0001 \
   --save_interval_secs=60 \
   --save_summaries_secs=60 \
   --log_every_n_steps=10 \

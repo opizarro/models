@@ -45,7 +45,7 @@ python train_image_classifier.py \
   --model_name=inception_v3 \
   --max_number_of_steps=20000 \
   --batch_size=32 \
-  --learning_rate=0.001 \
+  --learning_rate=0.0001 \
   --save_interval_secs=60 \
   --save_summaries_secs=60 \
   --log_every_n_steps=10 \
