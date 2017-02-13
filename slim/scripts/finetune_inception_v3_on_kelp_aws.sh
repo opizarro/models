@@ -47,8 +47,8 @@ python train_image_classifier.py \
   --max_number_of_steps=1000 \
   --batch_size=32 \
   --learning_rate=0.01 \
-  --save_interval_secs=30 \
-  --save_summaries_secs=30 \
+  --save_interval_secs=60 \
+  --save_summaries_secs=60 \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
@@ -75,8 +75,8 @@ python train_image_classifier.py \
   --max_number_of_steps=10000 \
   --batch_size=32 \
   --learning_rate=0.001 \
-  --save_interval_secs=30 \
-  --save_summaries_secs=30 \
+  --save_interval_secs=60 \
+  --save_summaries_secs=60 \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
