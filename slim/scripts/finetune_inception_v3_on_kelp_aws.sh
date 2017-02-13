@@ -46,14 +46,14 @@ python train_image_classifier.py \
   --trainable_scopes=InceptionV3/Logits,InceptionV3/AuxLogits \
   --max_number_of_steps=1000 \
   --batch_size=32 \
-  --learning_rate=0.01 \
+  --learning_rate=0.002 \
   --save_interval_secs=60 \
   --save_summaries_secs=60 \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
-  --num_epochs_per_decay=0.1 \
-  --opt_epsilon=0.00000001
+  --num_epochs_per_decay=0.1
+
 
 # Run evaluation.
 python eval_image_classifier.py \
@@ -80,8 +80,8 @@ python train_image_classifier.py \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
-  --num_epochs_per_decay=0.1 \
-  --opt_epsilon=0.00000001
+  --num_epochs_per_decay=0.1
+
 
 # Run evaluation.
 python eval_image_classifier.py \
