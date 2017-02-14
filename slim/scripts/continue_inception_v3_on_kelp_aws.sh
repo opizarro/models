@@ -13,7 +13,8 @@
 PRETRAINED_CHECKPOINT_DIR=/tmp/checkpoints_kelp
 
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-TRAIN_DIR=/tmp/kelp-models/inception_v3
+#TRAIN_DIR=/tmp/kelp-models/inception_v3
+TRAIN_DIR=/home/ubuntu/kelp-models/inception_v3
 
 # Where the dataset is saved to.
 DATASET_DIR=/home/ubuntu/training_data_kelpnokelp_benthoz_ziggy
