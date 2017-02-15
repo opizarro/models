@@ -44,7 +44,7 @@ python train_image_classifier.py \
   --dataset_dir=${DATASET_DIR} \
   --checkpoint_path=${TRAIN_DIR} \
   --model_name=inception_v3 \
-  --max_number_of_steps=1 \
+  --max_number_of_steps=12000 \
   --batch_size=32 \
   --learning_rate=0.0001 \
   --save_interval_secs=60 \
@@ -52,7 +52,7 @@ python train_image_classifier.py \
   --log_every_n_steps=10 \
   --optimizer=rmsprop \
   --weight_decay=0.00004 \
-  --num_epochs_per_decay=0.1 \
+  --num_epochs_per_decay=0.2 \
   --opt_epsilon=0.00000001
 
 # Run evaluation.
